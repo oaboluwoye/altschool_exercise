@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: blue; */
+    /* margin: 0; */
+    min-height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.borderContainer {
+    padding: 20px;
+    border-radius: 5px;
+    /* flex: 1;
+    display: flex;
+    flex-direction: column; */
+    background-color: rgb(17, 17, 46);
+    min-height: 400px;
+     width: 400px;
+
+}
+
+.textContainer {
+    border-radius: 30px;
+    padding: 10px;
+    border: 2px solid;
+    /* display: flex; */
+    text-align: right;
+    /* align-items: center;
+    justify-content: end; */
+    border-radius: 25px;
+    margin-bottom: 20px;
+    min-height: 80px;
+    font-size: 1.6em;
+    text-align: end;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: rgb(38, 38, 95);
+    color: rgb(189, 216, 189);
+    /* flex: 1; */
+    overflow: auto;
+}
+
+.operateContainer {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+    padding: 10px;
+
+}
+
+button {
+    /* width: 80px;
+    height: 50px; */
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(68, 64, 94, 0.918);
+    color: white;
+    font-size: 2rem;
+    gap: 14px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+button:hover{
+    background-color: rgba(39, 36, 63, 0.918);
+}
+
+.oprateBttn {
+    /* width: 80px;
+    height: 50px; */
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(245, 153, 14);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.oprateBttn:hover{
+    background-color: rgb(121, 75, 6);
+}
+
+.del {
+    background-color: rgb(175, 175, 243);
+    color: black;
+    border-radius: 50%;
+
+}
+
+.clear {
+    background-color: rgb(236, 60, 6);
+    color: white;
+    border-radius: 50%;
+}
+
+#evalBttn {
+    /* width: 70px;
+    height: 50px; */
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(167, 165, 182, 0.918);
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#evalBttn:hover {
+    background-color: rgba(100, 98, 114, 0.918);
+}
