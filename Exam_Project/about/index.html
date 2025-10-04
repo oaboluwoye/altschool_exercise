@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The About Page</h1>
+    
+      <a href="../index.html">Home Page</a>
+      
+    <h2>Image message on personality</h2>
+    <!----Images in different screen resolutions-->
+    <picture>
+        <source media="(max-width: 600px)" srcset="../assets/images/pexels-kqpho-1583582.jpg">
+        <source media="(max-width: 800px)" srcset="../assets/images/pexels-phael-2401442.jpg">
+        <source media="(max-width: 1024px)" srcset="../assets/images/pexels-phael-2401442.jpg">
+        <img src="../assets/images/pexels-phael-2401442.jpg" alt="My Image">
+    </picture>
+
+    <h2>Video on hobby</h2>
+    <video controls width="400" height="400" >
+        <source src="../assets/videos/13151576_1080_1920_59fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+
+    <h2>Fave sound</h2>
+    <audio controls>
+        <source src="../assets/audio/018136_funny-music-orchestra-wav-54828.mp3" type="audio/mp3" />
+          Your browser doesn't support this audio file.
+    </audio>
+
+</body>
+</html>

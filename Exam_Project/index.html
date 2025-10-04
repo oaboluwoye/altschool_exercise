@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Catalog</title>
+</head>
+<body>
+    <h1>AltSchool School Programs</h1>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>School</th>
+                <th>Courses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">School of Engineering</th>
+                <td>
+                    <ul>
+                        <li>Frontend Engineering</li>
+                        <li>Backend Engineering</li>
+                        <li>Cloud Engineering</li>
+                        <li>Cybersecurity</li>
+                    </ul>
+                </td>              
+            </tr>
+            <tr>
+                <th scope="row">School of Data</th>
+                <td>
+                    <ul>
+                        <li>Data Analysis</li>
+                        <li>Data Science</li>
+                        <li>Data Engineering</li>
+                    </ul>
+                </td>  
+            </tr>
+            <tr>
+                <th scope="row">School of Product</th>
+                <td>
+                    <ul>
+                        <li>Product Design</li>
+                        <li>Product Marketing</li>
+                        <li>Product Management</li>
+                    </ul>
+                </td>  
+            </tr>
+            <tr>
+                <th scope="row">School of Creative Economy</th>
+                <td>
+                    <ul>
+                        <li>Navigating the Music Business in Africa: Afrobeats case study</li>
+                        <li>Content Mastery for African Creators</li>
+                    </ul>
+                </td>  
+            </tr>
+            <tr>
+                <th scope="row">School of Business</th>
+                <td>
+                    <ul>
+                        <li>High-Impact Selling: From Prospecting to Closing</li>
+                        <li>Digital Marketing</li>
+                    </ul>
+                </td>  
+            </tr>
+
+        </tbody>     
+    </table>
+    <br>
+
+    <h2><a href="./about/index.html">About Me</a></h2>
+      <!-- Instance info -->
+    <h2>Server IP: INSTANCE_IP_PLACEHOLDER</h2>
+    <p>This page is served from EC2 instance with Private IP: {{ ansible_default_ipv4.address }}</p>
+    <p>Hostname: {{ ansible_hostname }}</p>
+
+</body>
+</html>
