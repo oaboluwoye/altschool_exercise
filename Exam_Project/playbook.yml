@@ -18,7 +18,7 @@
 
     - name: Copy all related files to web root with index.html
       copy:
-        src: /home/vagrant/alt_projects/Exam_Project/
+        src: /home/vagrant/alt_project/Exam_Project/
         dest: /var/www/html/
 
 
@@ -26,6 +26,11 @@
       replace:
         path: /var/www/html/index.html
         regexp: 'INSTANCE_IP_PLACEHOLDER'
-        replace: "{{ ec2_public_ip.stdout }}"
+        replace: "{{ ansible_default_ipv4.address }}"
 
+    - name: Replace placeholder with actual hostname
+      replace:
+        path: /var/www/html/index.html
+        regexp: 'INSTANCE_HOSTNAME_PLACEHOLDER'
+        replace: "{{ ansible_hostname }}"
 
